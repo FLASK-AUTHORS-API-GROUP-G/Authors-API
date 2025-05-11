@@ -7,7 +7,7 @@ bcrypt = Bcrypt()
 
 from app.controllers.auth.auth_controller import auth
 from app.controllers.authors.authors_controller import authors
-from app.controllers.companies.companies_controller import companys
+from app.controllers.companies.companies_controller import companies
 from app.controllers.books.books_controller import books
 
 def create_app():
@@ -28,7 +28,7 @@ def create_app():
     # Register blueprints
     app.register_blueprint(auth)
     app.register_blueprint(authors)
-    app.register_blueprint(companys)
+    app.register_blueprint(companies)
     app.register_blueprint(books)
 
     # Home route

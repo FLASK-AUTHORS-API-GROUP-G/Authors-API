@@ -57,7 +57,7 @@ def createCompany():
         db.session.rollback()
         return jsonify ({"error":str(e)}),HTTP_500_INTERNAL_SERVER_ERROR
     
-# Getting all companys
+# Getting all companies
 @companies.get('/all')
 @jwt_required()
 def getAllCompanys():
