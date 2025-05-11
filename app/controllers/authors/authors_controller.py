@@ -12,7 +12,7 @@ authors = Blueprint('authors', __name__, url_prefix ='/api/v1/authors')
 
 # Retrieving all authors from the database
 
-@authors.get('/author')
+@authors.get('/')
 @jwt_required()
 def getAllAuthors():
     
